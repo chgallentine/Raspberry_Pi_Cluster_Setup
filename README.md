@@ -43,7 +43,7 @@ sudo raspi-config
 ```
 
 In order:
-1. Change the user password
+1. Change the user password (REMEMBER THIS)
 2. Under 2, Network Options, change the Hostname to node0001
 3. Under 3, Boot Options, B1, Desktop/CLI, change to B2, Console Autologin
 4. Under 4, Localization, change to your region/time zone
@@ -124,7 +124,7 @@ You will be asked to type the passwords to the Pi's and 'yes' repeatedly through
 Test the program's success with:
 
 ```bash
-mpiexec -f machinfile -n <NUMBER OF NODES> hostname
+mpiexec -f machinefile -n <NUMBER OF NODES> hostname
 ```
 
 This should print the hostname of each node in the cluster, indicating that MPI has been successfully installed and cluster has been established. The cluster is now ready to run any MPI program desired. 
